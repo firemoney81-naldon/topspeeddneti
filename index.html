@@ -1,23 +1,467 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+ <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "mainEntity": {
+      "@type": "FAQPage",
+      "name": "인터넷 설치 관련 자주 묻는 질문",
+      "description": "인터넷 가입, 설치 시간, 비용, 사은품 등에 대한 주요 질문과 답변.",
+      "about": "인터넷 설치 시간, 인터넷 가입 방법, 비용 비교",
+      "datePublished": "2026-04-15",
+      "publisher": {
+        "@type": "Organization",
+        "name": "인터넷 가입 비교 센터"
+      },
+      "image": "https://도메인/main-image.png",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://도메인"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "인터넷 설치 가이드",
+            "item": "https://도메인/installation-guide"
+          }
+        ]
+      },
+      "mainContentOfPage": {
+        "@type": "WebPageElement",
+        "text": "본 페이지는 2026년 기준 전국 인터넷 설치 시간, 비용, 가입 혜택에 대한 포괄적인 정보를 제공합니다. SK 브로드밴드, KT 올레, LG 유플러스 등 주요 통신사별 설치 시간 비교와 현금 지원금, 사은품 혜택을 상세하게 분석합니다."
+      },
+      "headline": "인터넷 설치 시간: 평균 소요 시간, 비용, 사은품 총정리 (2026년 최신 정보)",
+      "dateModified": "2026-04-15",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "김현우"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "reviewBody": "인터넷 가입 전 궁금했던 설치 시간과 사은품 정보를 한눈에 볼 수 있어 좋았습니다."
+        }
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://도메인/search?q={search_term}",
+        "query-input": "required name=search_term"
+      },
+      "itemReviewed": {
+        "@type": "Organization",
+        "name": "인터넷 가입 비교 센터"
+      },
+      "mainEntityOfPage": "https://도메인/installation-guide",
+      "suggestedContent": [
+        "인터넷 가입 현금지원",
+        "인터넷 약정 기간",
+        "SKT 기가인터넷 가격"
+      ],
+      "location": {
+        "@type": "PostalAddress",
+        "addressCountry": "KR",
+        "addressRegion": "Seoul",
+        "addressLocality": "Jongno-gu"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "description": "인터넷 가입 상담 무료",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "itemOffered": "인터넷 가입 컨설팅 서비스"
+        }
+      ],
+      "about": {
+        "@type": "Service",
+        "name": "인터넷 설치",
+        "provider": {
+          "@type": "Organization",
+          "name": "인터넷 가입 비교 센터"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": ["서울시", "부산시", "대구시", "인천시", "광주시", "대전시", "울산시", "세종시", "경기도", "강원도", "충청북도", "충청남도", "전라북도", "전라남도", "경상북도", "경상남도", "제주도"]
+        },
+        "description": "전국 인터넷 설치 및 가입 비교 서비스 제공."
+      }
+    }
+  }
+  </script>
+
+  <!-- FAQPage JSON-LD (Nested structure for better SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "인터넷 설치는 얼마나 걸리나요? 평균 설치 시간은?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "일반적으로 인터넷 설치는 방문 후 1시간에서 2시간 사이가 소요됩니다. 하지만 건물 내부 환경(오래된 주택, 아파트), 기가 인터넷 설치 여부, 현장 상황(추가 배선 작업 필요)에 따라 최대 3~4시간까지 소요될 수 있습니다. 설치 시간을 단축하기 위해서는 사전에 주택 구조와 원하는 서비스(WiFi, TV 결합 등)를 명확히 안내하는 것이 중요합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "인터넷 설치 시 발생하는 추가 비용은 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "기본 설치비 외에 추가 비용이 발생할 수 있습니다. 예를 들어, 인터넷 선로가 불량하거나 단자함이 외부에 있어 복잡한 추가 작업이 필요할 경우, 또는 구형 주택의 경우 배선 공사가 필요할 때 추가 비용이 발생합니다. 또한, 유료 서비스인 와이파이 공유기 임대료나 TV 셋톱박스 설치비 등도 고려해야 합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "인터넷 가입 시 현금지원, 사은품 혜택은 언제 받을 수 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "인터넷 가입 시 제공되는 현금지원 또는 사은품은 통신사 정책과 가입 채널에 따라 다릅니다. 보통 설치 완료 후 1~2주 이내에 지급되지만, 일부 업체는 다음 달 말 지급을 원칙으로 하기도 합니다. 정확한 지급 시기는 가입 시점에 상담원에게 확인해야 하며, 신뢰할 수 있는 업체인지 내돈내산 후기 등을 통해 확인하는 것이 중요합니다."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* 폰트, 기본 설정 */
+    body { font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; line-height:1.7; font-size:16px; }
+    header, section, footer { max-width:960px; margin:24px auto; padding:30px; background:#ffffff; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    /* 제목 스타일 */
+    h1, h2, h3 { color:#0a4c8f; margin-bottom:16px; letter-spacing: -0.5px; }
+    h1 { font-size:2.8rem; text-align:center; padding-bottom:10px; border-bottom:3px solid #e0eaf3; margin-top:0; }
+    h2 { font-size:2.2rem; border-left:6px solid #285f8f; padding-left:15px; background-color: #f7f9fc; padding-top:10px; padding-bottom:10px; }
+    h3 { font-size:1.7rem; color:#1e6aab; border-bottom:1px solid #e0eaf3; padding-bottom:5px; margin-top:25px; }
+    /* 텍스트 스타일 */
+    p, li, td, th { font-size:1.05rem; line-height:1.8; }
+    ul, ol { padding-left:25px; margin-bottom:20px; }
+    li { margin-bottom:8px; }
+    /* 테이블 스타일 */
+    table { width:100%; border-collapse: separate; border-spacing: 0; margin:25px 0; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
+    th, td { border:1px solid #e0eaf3; padding:15px; text-align:left; }
+    th { background:#285f8f; color:#fff; font-weight:700; border-color:#285f8f; }
+    td { background:#ffffff; }
+    /* 강조 섹션 (컬러 박스) */
+    .highlight-box { background-color:#e6f3ff; border-left:5px solid #0a4c8f; padding:20px; margin:20px 0; border-radius:8px; }
+    .highlight-box strong { font-size:1.1rem; color:#0a4c8f; }
+    /* 버튼 스타일 */
+    .btn-cta {
+      display:inline-block;
+      padding:16px 35px;
+      background:#0a4c8f;
+      color:#fff;
+      font-weight:700;
+      border:none;
+      border-radius:30px;
+      box-shadow:0 6px 12px rgba(10, 76, 143, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      cursor:pointer;
+      text-decoration:none;
+      text-align:center;
+      font-size:1.1rem;
+      margin-top:20px;
+    }
+    .btn-cta:hover { background:#083a6a; transform:translateY(-2px); box-shadow:0 8px 15px rgba(10, 76, 143, 0.5); }
+    /* 이미지 스타일 */
+    img { max-width:100%; height:auto; border-radius:10px; margin-top:20px; margin-bottom:20px; }
+    /* 내부 링크용 앵커 */
+    .anchor { display:block; position:relative; top:-80px; visibility:hidden; }
+    /* 반응형 디자인 */
+    @media(max-width:768px) {
+      body { padding:10px; }
+      header, section, footer { margin:15px auto; padding:20px; }
+      h1 { font-size:2rem; }
+      h2 { font-size:1.8rem; }
+      h3 { font-size:1.5rem; }
+      p, li, td, th { font-size:0.95rem; }
+      .btn-cta { width:100%; padding:14px 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>인터넷 설치 시간: 평균 소요 시간, 비용, 사은품 총정리 (2026년 최신 정보)</h1>
+    <p>인터넷 설치에 필요한 평균 소요 시간부터 통신사별 비교, 현금지원 및 사은품 혜택, 비용 절감 팁까지! 2026년 최신 정보를 바탕으로 A부터 Z까지 완벽하게 안내합니다.</p>
+    <div style="text-align:center;">
+      <a class="btn-cta" href="#contact">지금 바로 무료 견적/상담 받기</a>
+    </div>
+  </header>
+
+  <nav aria-label="페이지 내 이동">
+    <section>
+      <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; justify-content:space-around; background:#f7f9fc; border-radius:8px; padding:15px; box-shadow:inset 0 1px 3px rgba(0,0,0,0.05);">
+        <li style="margin:8px;"><a href="#average-time" style="color:#0a4c8f; text-decoration:none; font-weight:700;">평균 설치 시간 분석</a></li>
+        <li style="margin:8px;"><a href="#process" style="color:#0a4c8f; text-decoration:none; font-weight:700;">설치 과정 상세 안내</a></li>
+        <li style="margin:8px;"><a href="#provider-compare" style="color:#0a4c8f; text-decoration:none; font-weight:700;">통신사별 비교 (SKT, KT, LGU+)</a></li>
+        <li style="margin:8px;"><a href="#checklist" style="color:#0a4c8f; text-decoration:none; font-weight:700;">설치 전 체크리스트</a></li>
+        <li style="margin:8px;"><a href="#pricing" style="color:#0a4c8f; text-decoration:none; font-weight:700;">비용 및 사은품 혜택</a></li>
+        <li style="margin:8px;"><a href="#faq" style="color:#0a4c8f; text-decoration:none; font-weight:700;">FAQ (자주 묻는 질문)</a></li>
+      </ul>
+    </section>
+  </nav>
+
+  <section id="average-time">
+    <span id="average-time-anchor" class="anchor"></span>
+    <h2>평균 인터넷 설치 시간과 소요 시간 예측</h2>
+    <p>인터넷 설치를 앞두고 가장 궁금한 점은 ‘과연 얼마나 걸릴까?’입니다. 2026년 기준, 전국 평균 인터넷 설치 시간은 약 1~2시간으로 예상할 수 있습니다. 하지만 이는 어디까지나 평균일 뿐이며, 거주지의 특성, 통신사 정책, 기사님의 숙련도 등 여러 요인에 의해 크게 달라질 수 있습니다. 특히 이사철 성수기나 주말에는 설치 예약이 밀려 실제 소요 시간이 더 길어질 수 있습니다. 따라서 이사나 신규 가입 시에는 최소 2~3일 전, 성수기에는 1주일 전 미리 예약하는 것이 좋습니다.</p>
+
+    <div class="highlight-box">
+      <strong>인터넷 설치 시간 주요 변수 (체크 포인트):</strong>
+      <ul>
+        <li><strong>건물 유형:</strong> 아파트 vs. 주택 (아파트는 인입선이 잘 갖춰져 있어 시간이 짧음)</li>
+        <li><strong>설치 유형:</strong> 신규 설치 vs. 이전 설치 (신규 설치 시 배선 작업 필요 여부)</li>
+        <li><strong>인터넷 속도:</strong> 100M 광랜 vs. 기가인터넷 (기가인터넷은 추가 장비 설치가 필요할 수 있음)</li>
+        <li><strong>추가 서비스:</strong> 인터넷 단독 vs. TV 결합상품 (TV 셋톱박스 설치 시간 추가)</li>
+      </ul>
+    </div>
+
+    <h3>설치 유형별 소요 시간 비교</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>유형</th>
+          <th>주요 특징</th>
+          <th>평균 소요 시간 (예상)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>아파트 신규/이전 설치 (일반)</td>
+          <td>이미 배선이 완료된 상태, 단자함 연결 작업 위주</td>
+          <td>30분 ~ 1시간 30분</td>
+        </tr>
+        <tr>
+          <td>주택/빌라 신규 설치 (배선 작업 필요)</td>
+          <td>광케이블 인입, 벽 내부 배선 작업이 필요할 수 있음</td>
+          <td>1시간 30분 ~ 3시간</td>
+        </tr>
+        <tr>
+          <td>기가인터넷 설치 (추가 장비)</td>
+          <td>고속 네트워크 설정 및 광모뎀, 기가 와이파이 공유기 설치</td>
+          <td>1시간 ~ 2시간</td>
+        </tr>
+        <tr>
+          <td>인터넷 + TV 결합 상품 설치</td>
+          <td>인터넷 설치 후 TV 셋톱박스 설정, 채널 테스트 포함</td>
+          <td>1시간 30분 ~ 2시간 30분</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>설치 기사님 방문 전, 미리 설치할 장소와 기기가 놓일 위치를 정해두면 시간을 절약할 수 있습니다. 짐 정리 중이거나 이사 당일에는 예상치 못한 변수로 인해 설치가 지연될 수 있으므로, 가능하다면 이사 전이나 다음날에 예약하는 것이 현명합니다.</p>
+
+    <!-- Pexels Image Placeholder -->
+    <img src="https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800" alt="인터넷 설치 기사, 컴퓨터 작업" style="max-width:100%; height:auto; display:block; margin:20px auto;">
+    <p style="text-align:center; font-style:italic; font-size:0.9rem; color:#666;">*이미지는 Pexels.com에서 제공되는 상업적 이용 가능 이미지입니다. (Image Source: Pexels.com)</p>
+  </section>
+
+  <section id="process">
+    <span id="process-anchor" class="anchor"></span>
+    <h2>인터넷 설치 절차 상세 안내: 방문부터 마무리까지</h2>
+    <p>인터넷 설치가 어떻게 진행되는지 미리 알면 시간을 단축하고 불필요한 마찰을 줄일 수 있습니다. 통신사별 차이는 있지만, 일반적인 설치 과정은 다음과 같습니다.</p>
+    <ol>
+      <li><strong>신청 및 예약:</strong> 원하는 통신사(SKT, KT, LGU+)와 요금제(기가인터넷, 100M 광랜)를 선택하고 가입 신청을 합니다. 현금지원이나 사은품 혜택을 비교하여 가입하는 것이 일반적입니다.</li>
+      <li><strong>설치 기사 방문:</strong> 예약된 날짜와 시간에 기사님이 방문합니다. 방문 전 기사님으로부터 연락이 오니, 미리 설치 장소의 특이사항(도어락 비밀번호, 건물 출입 방법 등)을 전달하는 것이 좋습니다.</li>
+      <li><strong>배선 작업 및 인입:</strong> 건물 외부의 통신 단자함에서 고객의 집 내부로 인터넷 선을 연결하는 작업입니다. 주택이나 빌라의 경우 광케이블 인입이 필요할 수 있으며, 이 때 설치 시간이 가장 많이 소요됩니다.</li>
+      <li><strong>장비 설치 및 설정:</strong> 집 내부로 들어온 인터넷 선을 모뎀(Modem)에 연결하고, 와이파이 공유기(Router)를 설치합니다. TV 결합상품의 경우 셋톱박스 설치도 함께 진행됩니다.</li>
+      <li><strong>속도 및 연결 테스트:</strong> 설치가 완료되면 기사님과 함께 인터넷 속도 측정(스피드 테스트)을 진행합니다. 100메가, 500메가(반기가), 1기가 등 신청한 요금제 속도가 제대로 나오는지 확인해야 합니다.</li>
+      <li><strong>마무리 및 정리:</strong> 설치 기사님은 설치 후 주변을 정리하고 고객에게 사용법을 안내합니다. 모든 과정이 마무리되면 설치 확인 서명 및 요금 안내를 받습니다.</li>
+    </ol>
+    <div class="highlight-box">
+      <strong>인터넷 설치 지연 요인 베스트 3</strong>
+      <p>설치 시간을 늦추는 가장 큰 원인은 '예상치 못한 현장 문제'입니다. 특히 구형 주택이나 건물의 통신 환경이 불량할 경우 설치에 오랜 시간이 걸릴 수 있습니다.</p>
+      <ol>
+        <li><strong>건물 내부 배선 불량:</strong> 오래된 건물일수록 내부 배선이 끊겨있거나 노후되어 재설치 또는 보수 작업이 필요합니다.</li>
+        <li><strong>단자함 접근 불가:</strong> 통신 단자함이 잠겨 있거나 먼 곳에 있어 접근이 어렵거나, 심지어 단자함 자체가 없는 경우도 있습니다.</li>
+        <li><strong>예약 시간 중복/지연:</strong> 성수기에는 설치 기사님의 스케줄이 빡빡하여 앞선 고객의 작업이 길어지면 다음 예약이 연쇄적으로 지연될 수 있습니다.</li>
+      </ol>
+    </div>
+
+    <h3>설치 가능한 전국 주요 지역</h3>
+    <p>본 서비스는 전국망을 통해 설치 가능합니다. 주요 광역시도부터 지방 소도시까지 커버하며, 특히 수도권 지역은 설치 가능 여부 확인이 빠릅니다. 서울(강남, 강북, 송파, 마포, 영등포 등), 경기(평택, 고덕, 수원, 용인, 분당, 일산, 파주, 화성 등), 인천(부평, 송도 등), 부산(해운대, 서면 등), 대구(수성구, 달서구 등), 대전, 광주, 울산, 세종 등 전국 어디든 설치 가능합니다.</p>
+  </section>
+
+  <section id="provider-compare">
+    <span id="provider-compare-anchor" class="anchor"></span>
+    <h2>통신사별 인터넷 설치 시간 및 특징 비교 (SKT vs KT vs LG U+)</h2>
+    <p>국내 주요 통신사인 SKT(SK브로드밴드), KT(올레), LG U+는 각기 다른 설치 환경과 강점을 가지고 있습니다. 통신사별 인터넷 설치 시간을 비교하여 나에게 맞는 업체를 선택하는 것이 중요합니다. 특히 ‘내돈내산’ 후기를 보면 각 통신사의 지역별 설치 품질 차이를 알 수 있습니다.</p>
+
+    <h3>1. KT (Korea Telecom): 전국망 최고 품질</h3>
+    <ul>
+      <li><strong>장점:</strong> KT는 유선 통신망에서 독보적인 1위를 차지하고 있습니다. 전국 어디든 설치가 가능하며, 특히 외곽 지역이나 신축 건물이 아닌 곳에서도 높은 확률로 설치가 가능합니다. 안정적인 회선을 중시한다면 KT가 추천됩니다.</li>
+      <li><strong>설치 시간:</strong> 평균 1~1.5시간. 전국망 인프라가 잘 되어 있어 대부분의 경우 빠른 설치가 가능하지만, 기가인터넷의 경우 LGU+나 SKT 대비 설치 과정이 복잡할 수 있습니다.</li>
+      <li><strong>추천 대상:</strong> 인터넷 안정성을 최우선으로 생각하는 고객, 기존 KT 휴대폰 사용자.</li>
+    </ul>
+
+    <h3>2. SKT (SK Broadband): 기가인터넷 강자</h3>
+    <ul>
+      <li><strong>장점:</strong> SKT는 통신사 결합 할인 혜택이 매우 강력합니다. 휴대폰 가족 결합 시 할인 폭이 커서 가족 구성원 모두 SKT를 사용하는 경우 가장 저렴한 가격으로 이용할 수 있습니다.</li>
+      <li><strong>설치 시간:</strong> 평균 1.5~2시간. SKT 기가인터넷 설치는 속도와 안정성 면에서 강점을 보이며, 신규 아파트 단지에서는 설치가 매우 빠릅니다.</li>
+      <li><strong>추천 대상:</strong> SKT 휴대폰을 사용하는 가족 구성원이 많은 고객, 대규모 현금 지원을 선호하는 고객.</li>
+    </ul>
+
+    <h3>3. LG U+ (LG Uplus): 가성비와 다양한 콘텐츠</h3>
+    <ul>
+      <li><strong>장점:</strong> LG U+는 SKT와 마찬가지로 가족 결합 할인 혜택이 좋으며, IPTV 콘텐츠(넷플릭스, 유튜브 등)에 강점이 있습니다. 특히 '저렴한곳'을 찾는 소비자에게 매력적인 가격대를 제시합니다.</li>
+      <li><strong>설치 시간:</strong> 평균 1~1.5시간. 최근 5G 인프라와 함께 유선 인터넷망도 공격적으로 확장하고 있어 설치 속도가 빨라지고 있습니다.</li>
+      <li><strong>추천 대상:</strong> 가성비를 중요하게 생각하는 고객, IPTV 콘텐츠(U+TV) 활용이 많은 고객.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <strong>알아두면 유용한 팁: '반포장이사' vs '인터넷 이전 설치'</strong>
+      <p>이사할 때 '투룸 반포장이사'를 하든, '풀 포장이사'를 하든, 인터넷 이전 설치는 별도로 예약해야 합니다. 이사 업체는 짐 운반만 담당하며, 인터넷/TV/에어컨 설치는 전문 분야가 다릅니다. 이사 1주일 전 미리 통신사에 이전 신청을 하고, 이사 당일 또는 다음날로 설치 일정을 잡는 것이 좋습니다. 이사 전날 인터넷 설치를 완료해두면 이사 직후부터 인터넷을 사용할 수 있어 편리합니다.</p>
+    </div>
+    <p>또한, 많은 고객들이 현금지원, 사은품 지급을 받기 위해 인터넷 신규 가입을 고려합니다. 신규 가입 시 통신사별 비교를 통해 최대 현금 지원금을 받을 수 있는지 확인해보세요. 인터넷 가입 시 주어지는 '현금지원', '사은품', '지원금'은 업체마다 차이가 있으므로 여러 곳을 비교해보고 '순위'가 높은 업체를 선택하는 것이 현명합니다.</p>
+  </section>
+
+  <section id="checklist">
+    <span id="checklist-anchor" class="anchor"></span>
+    <h2>인터넷 설치 전 필수 체크리스트 (2026년 업데이트)</h2>
+    <p>인터넷 설치 시간을 단축하고, 불필요한 추가 비용을 막기 위해 반드시 확인해야 할 사항들입니다.</p>
+    <ol>
+      <li><strong>가입 유형 결정 (신규 vs. 이전):</strong> 약정 기간이 남았다면 이전 설치를, 약정이 끝났다면 현금 지원 혜택을 받을 수 있는 '신규 가입'을 고려합니다.</li>
+      <li><strong>설치 환경 확인:</strong> 내가 사는 곳이 아파트인지, 주택인지, 혹은 새로 지은 건물인지 파악합니다. 아파트 관리사무소를 통해 '광케이블 인입' 여부를 확인하면 설치 시간을 예측할 수 있습니다.</li>
+      <li><strong>설치 장비 위치 선정:</strong> 모뎀과 공유기를 어디에 둘지 미리 정해둡니다. 특히 와이파이 공유기는 집안 중앙에 두는 것이 좋습니다.</li>
+      <li><strong>추가 장비 필요 여부 파악:</strong> TV 셋톱박스, 인공지능 스피커, 와이파이 증폭기 등 추가 장비가 필요한지 미리 파악하고 신청합니다.</li>
+      <li><strong>특이사항 고지:</strong> 방문 전, 기사님에게 현관 도어락, 주차장 위치, 건물 통신 단자함 위치 등 현장 특이사항을 미리 알려줍니다.</li>
+      <li><strong>사전 점검:</strong> 만약 '인터넷 이전 설치'라면 기존 모뎀/공유기의 작동 여부를 미리 점검하여 고장 여부를 확인합니다.</li>
+    </ol>
+
+    <!-- Pexels Image Placeholder -->
+    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800" alt="와이파이 공유기, 모뎀, 인터넷 선" style="max-width:100%; height:auto; display:block; margin:20px auto;">
+    <p style="text-align:center; font-style:italic; font-size:0.9rem; color:#666;">*이미지는 Pexels.com에서 제공되는 상업적 이용 가능 이미지입니다. (Image Source: Pexels.com)</p>
+  </section>
+
+  <section id="pricing">
+    <span id="pricing-anchor" class="anchor"></span>
+    <h2>인터넷 설치 비용 및 사은품 혜택 분석</h2>
+    <p>인터넷 설치 비용은 기본적으로 '설치비'와 '장비 임대료'로 구성됩니다. 하지만 신규 가입 시에는 설치비 면제 이벤트나 대규모 현금 지원, 사은품 지급을 통해 실질적인 비용 부담을 줄일 수 있습니다. '저렴한곳'을 찾는 소비자들은 통신사별 '비교', '견적'을 통해 최대 혜택을 찾아야 합니다.</p>
+
+    <h3>1. 인터넷 가입 시 주요 비용 항목 (2026년 기준)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>항목</th>
+          <th>내용</th>
+          <th>예상 비용 (평균)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>설치비 (신규 가입)</td>
+          <td>기본 1회성 설치 비용. 통신사별로 상이하며, 약정 시 면제되거나 할인되는 경우가 많음.</td>
+          <td>22,000원 ~ 33,000원</td>
+        </tr>
+        <tr>
+          <td>모뎀/공유기 임대료</td>
+          <td>인터넷 사용에 필수적인 장비(모뎀, 와이파이 공유기) 월 임대료.</td>
+          <td>월 1,100원 ~ 4,400원</td>
+        </tr>
+        <tr>
+          <td>TV 셋톱박스 임대료</td>
+          <td>TV 결합 상품 이용 시 필수 장비. AI 셋톱박스는 비용이 더 높음.</td>
+          <td>월 2,200원 ~ 5,500원</td>
+        </tr>
+        <tr>
+          <td>부가 서비스 비용</td>
+          <td>AI 스피커, CCTV, IP전화 등 추가 서비스 이용 시 발생하는 비용.</td>
+          <td>별도</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2. 현금지원 및 사은품 혜택 비교</h3>
+    <p>인터넷 신규 가입 시 가장 중요한 고려 사항 중 하나는 '사은품'입니다. 통신사 본사, 온라인 대리점, 오프라인 매장 등 가입 채널에 따라 사은품 혜택이 크게 달라집니다. 특히 '인터넷 가입 현금지원'은 대리점별로 천차만별이므로 꼼꼼한 비교가 필요합니다. '상품권' 또는 '현금지원' 중 어떤 것을 선택할지 미리 결정해야 합니다.</p>
+    <ul>
+      <li><strong>온라인 대리점:</strong> 최대 '현금지원'을 제공하는 경우가 많아 '싼곳'을 찾는 고객에게 유리합니다. 보통 인터넷 신규 가입 시 30만원 이상의 현금 지원금을 받을 수 있습니다.</li>
+      <li><strong>통신사 본사:</strong> 상대적으로 현금 지원 규모는 작지만, 사은품 대신 '요금 할인'이나 '상품권'을 제공하는 경우가 많습니다.</li>
+      <li><strong>결합 상품:</strong> 휴대폰과 인터넷을 결합하면 최대 50% 할인 혜택까지 받을 수 있습니다. 통신사별 '장단점'을 비교하여 우리 가족에게 가장 적합한 결합 상품을 찾아야 합니다.</li>
+    </ul>
+    <p>최근에는 AI 기술을 활용한 챗봇(Gemini, ChatGPT 등)을 통해 복잡한 요금제 비교를 쉽게 할 수 있습니다. 하지만 실제 설치 환경에 따른 정확한 견적은 전문가 상담을 통해 받는 것이 좋습니다.</p>
+  </section>
+
+  <section id="faq">
+    <span id="faq-anchor" class="anchor"></span>
+    <h2>자주 묻는 질문 (FAQ)</h2>
+    <dl>
+      <dt>Q1: 인터넷 설치 시간은 평일과 주말 중 언제 더 오래 걸리나요?</dt>
+      <dd>A: 일반적으로 주말이나 이사철 성수기에는 설치 기사님의 스케줄이 꽉 차 있어 평일 대비 설치 시간이 더 걸리거나, 예약 대기 시간이 길어집니다. 여유가 있다면 평일 비수기 시간대를 이용하는 것이 좋습니다.</dd>
+      <dt>Q2: 아파트와 주택 중 어디가 설치 시간이 짧은가요?</dt>
+      <dd>A: 대부분의 경우 아파트가 주택보다 설치 시간이 짧습니다. 아파트는 통신사별로 인입선이 미리 깔려있는 경우가 많아 단순 연결 작업으로 끝나는 반면, 주택은 외부에서 광케이블을 새로 끌어와야 하는 등 배선 작업이 필요할 수 있기 때문입니다.</dd>
+      <dt>Q3: 기가인터넷 설치 시 일반 인터넷보다 시간이 더 소요되나요?</dt>
+      <dd>A: 네, 기가인터넷은 일반 인터넷(100M)보다 더 높은 대역폭을 지원하므로, 광모뎀 설치 및 배선 확인 등 더 정밀한 작업이 필요합니다. 따라서 일반 인터넷보다 30분~1시간 정도 더 소요될 수 있습니다. 설치 환경에 따라서는 광케이블 포설이 필수일 수 있습니다.</dd>
+      <dt>Q4: 인터넷 가입 시 현금지원, 사은품 혜택을 받으려면 어떻게 해야 하나요?</dt>
+      <dd>A: 온라인 대리점을 통해 가입할 경우, 통신사별 '현금지원'이나 '상품권' 혜택을 비교하여 '순위'가 높은 곳을 선택합니다. 가입 시 '현금지원' 지급 일정을 반드시 확인하고, 사기 피해를 예방하기 위해 '내돈내산' 후기가 많은 신뢰할 수 있는 업체를 선택해야 합니다.</dd>
+      <dt>Q5: 이사 당일 인터넷 설치가 가능한가요?</dt>
+      <dd>A: 이론적으로는 가능하지만, 이사 당일에는 짐 정리, 청소, 다른 가전 설치 등으로 매우 혼잡합니다. 인터넷 설치는 시간이 오래 걸릴 수 있으므로, 이사 당일보다는 이사 전날 또는 다음날로 예약하는 것이 가장 좋습니다. 이사 전 최소 1주일 전 통신사에 이전 신청을 완료해야 합니다.</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <span id="contact-anchor" class="anchor"></span>
+    <h2>무료 견적/설치 상담 문의</h2>
+    <p>우리 집 인터넷 설치 환경에 따라 정확한 설치 시간, 비용, 사은품 혜택이 달라집니다. 아래 문의 양식을 통해 맞춤형 상담을 받아보세요. 전문 에이전트가 통신사별 '장단점', '현금지원', '할인' 혜택을 비교하여 최적의 플랜을 '추천'해 드립니다.</p>
+
+    <form action="/submit" method="POST" style="max-width:700px; margin:auto; padding:20px; border:1px solid #e0eaf3; border-radius:12px; background:#f7f9fc;">
+      <label for="name" style="font-weight:700; display:block; margin-bottom:5px;">이름<span style="color:red;">*</span></label>
+      <input type="text" id="name" name="name" required style="width:calc(100% - 16px); padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;" placeholder="홍길동" />
+
+      <label for="phone" style="font-weight:700; display:block; margin-bottom:5px;">연락처<span style="color:red;">*</span></label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9\-]+" style="width:calc(100% - 16px); padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;" placeholder="010-1234-5678" />
+
+      <label for="address" style="font-weight:700; display:block; margin-bottom:5px;">설치 희망 주소<span style="color:red;">*</span></label>
+      <input type="text" id="address" name="address" required style="width:calc(100% - 16px); padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;" placeholder="예: 경기도 평택시 비전동 OOO 아파트" />
+
+      <label for="building_type" style="font-weight:700; display:block; margin-bottom:5px;">건물 유형<span style="color:red;">*</span></label>
+      <select id="building_type" name="building_type" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;">
+        <option value="">선택하세요</option>
+        <option value="아파트">아파트</option>
+        <option value="빌라/다세대주택">빌라/다세대주택</option>
+        <option value="주택/단독주택">주택/단독주택</option>
+        <option value="오피스텔">오피스텔</option>
+        <option value="상가/사무실">상가/사무실</option>
+      </select>
+
+      <label for="service_type" style="font-weight:700; display:block; margin-bottom:5px;">신청 서비스 유형<span style="color:red;">*</span></label>
+      <select id="service_type" name="service_type" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;">
+        <option value="">선택하세요</option>
+        <option value="인터넷 신규 가입">인터넷 신규 가입</option>
+        <option value="인터넷 이전 설치">인터넷 이전 설치</option>
+        <option value="인터넷+TV 결합">인터넷+TV 결합</option>
+      </select>
+
+      <label for="desired_date" style="font-weight:700; display:block; margin-bottom:5px;">희망 설치 날짜</label>
+      <input type="date" id="desired_date" name="desired_date" style="width:calc(100% - 16px); padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;" />
+
+      <label for="message" style="font-weight:700; display:block; margin-bottom:5px;">추가 문의 사항</label>
+      <textarea id="message" name="message" rows="4" style="width:calc(100% - 16px); padding:10px; margin-bottom:20px; border:1px solid #ccc; border-radius:6px;" placeholder="예: 현재 통신사, 원하는 사은품 종류, 특이사항 등"></textarea>
+
+      <button type="submit" class="btn-cta">무료 상담 신청하기</button>
+    </form>
+  </section>
+
+  <section id="external-links">
+    <span id="external-links-anchor" class="anchor"></span>
+    <h2>신뢰할 수 있는 외부 정보 출처</h2>
+    <p>본 페이지의 정보는 아래 공신력 있는 기관 및 자료를 바탕으로 작성되었습니다. 더 자세한 정보는 아래 링크를 참고하세요.</p>
+    <ul>
+      <li><a href="https://www.kisa.or.kr/" target="_blank">한국인터넷진흥원 (KISA)</a>: 국내 인터넷 산업 동향 및 통계 정보 제공</li>
+      <li><a href="https://www.msit.go.kr/web/main/main.do" target="_blank">과학기술정보통신부</a>: 통신 관련 정책 및 규제 정보 제공</li>
+      <li><a href="https://namu.wiki/w/%EA%B8%B0%EA%B0%80%EC%9D%B8%ED%84%B0%EB%84%B7" target="_blank">나무위키 - 기가인터넷</a>: 기가인터넷의 기술적 정의 및 특징 설명</li>
+      <li><a href="https://www.kcc.go.kr/user.do?mode=list&page=A05030200&dc=K00000001" target="_blank">방송통신위원회</a>: 통신 소비자 보호 및 분쟁 조정 정보 제공</li>
+      <li><a href="https://www.ntb.or.kr/" target="_blank">한국통신사업자연합회 (KTOA)</a>: 통신사 주요 사업 및 정책 정보 제공</li>
+    </ul>
+  </section>
+
+  
